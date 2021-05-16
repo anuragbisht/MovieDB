@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieListCollectionViewCell" id="gTV-IL-0wX" customClass="MovieListCollectionViewCell" customModule="MovieDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="225" height="392"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="225" height="392"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" image="DefaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="Dgr-Tu-dHg">
+                        <rect key="frame" x="5" y="5" width="215" height="294"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star wars: The Rise of Skywalker" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIt-9e-8MG">
+                        <rect key="frame" x="5" y="324" width="215" height="41"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 May 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBw-fs-7og">
+                        <rect key="frame" x="5" y="370" width="215" height="17"/>
+                        <color key="tintColor" red="0.4717689753" green="0.47184103729999999" blue="0.49923503400000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1q-wz-caE">
+                        <rect key="frame" x="20" y="277" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="EAy-GG-DIE"/>
+                            <constraint firstAttribute="height" constant="40" id="V3p-he-ZLn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BBw-fs-7og" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="84T-fe-Nhx"/>
+                <constraint firstAttribute="trailing" secondItem="Dgr-Tu-dHg" secondAttribute="trailing" constant="5" id="9zs-Bh-lLV"/>
+                <constraint firstItem="Dgr-Tu-dHg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="IXC-IF-DfP"/>
+                <constraint firstAttribute="trailing" secondItem="BBw-fs-7og" secondAttribute="trailing" constant="5" id="NYi-FL-VTZ"/>
+                <constraint firstItem="BBw-fs-7og" firstAttribute="top" secondItem="hIt-9e-8MG" secondAttribute="bottom" constant="5" id="R9e-6O-8eT"/>
+                <constraint firstAttribute="trailing" secondItem="hIt-9e-8MG" secondAttribute="trailing" constant="5" id="S6a-zn-712"/>
+                <constraint firstAttribute="bottom" secondItem="BBw-fs-7og" secondAttribute="bottom" constant="5" id="bOh-Ca-uag"/>
+                <constraint firstItem="Dgr-Tu-dHg" firstAttribute="leading" secondItem="P1q-wz-caE" secondAttribute="leading" constant="-15" id="kuc-p6-4ZD"/>
+                <constraint firstItem="P1q-wz-caE" firstAttribute="bottom" secondItem="Dgr-Tu-dHg" secondAttribute="bottom" constant="18" id="lrp-vA-Ein"/>
+                <constraint firstItem="hIt-9e-8MG" firstAttribute="top" secondItem="Dgr-Tu-dHg" secondAttribute="bottom" constant="25" id="nn2-Ki-irK"/>
+                <constraint firstItem="hIt-9e-8MG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="swF-6d-WiQ"/>
+                <constraint firstItem="Dgr-Tu-dHg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="tld-5H-wGc"/>
+            </constraints>
+            <size key="customSize" width="225" height="392"/>
+            <connections>
+                <outlet property="imageView" destination="Dgr-Tu-dHg" id="NMD-xb-TDm"/>
+                <outlet property="scoreView" destination="P1q-wz-caE" id="F2y-HA-ddu"/>
+                <outlet property="subTitleLabel" destination="BBw-fs-7og" id="la6-F6-u5V"/>
+                <outlet property="titleLabel" destination="hIt-9e-8MG" id="nHB-kl-9lq"/>
+            </connections>
+            <point key="canvasLocation" x="171.73913043478262" y="-15.401785714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="DefaultImage" width="170.66667175292969" height="170.66667175292969"/>
+    </resources>
+</document>
